@@ -18,7 +18,7 @@ class Solution {
 			**/
 			
                   i = Math.max(i, charsetIndexMap.get(scanChar)) ; 
-                  charsetIndexMap.put(scanChar, j);
+                  charsetIndexMap.put(scanChar, j+1);
             }
 
                 
