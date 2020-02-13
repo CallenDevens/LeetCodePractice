@@ -1,8 +1,6 @@
 class Solution {
     //window sliding scan
     public int lengthOfLongestSubstring(String s) {
-        int windowStart = 0;
-        int windowEnd = 0;
         int n = s.length();
         int maxlength = 0;
         
