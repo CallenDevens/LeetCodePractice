@@ -35,8 +35,8 @@ class Solution {
            panL--;
            panR++;
          }
-        //panR is the pos after the last pandromic char, panL is the pos before...
-        //len = (lastPanRPos - lastPanLeftPos +1) = ((panR  -1) - (panL+1))+1 =
+        //panR is the pos after the last pandromic char, panL is the pos before the first pandromic char
+        //len = (lastPanRPos - fisrtPanLPos +1) = ((panR  -1) - (panL+1))+1 = panR - panL - 1;
         return panR - panL - 1;
     }
   
