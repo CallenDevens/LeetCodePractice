@@ -8,7 +8,7 @@ class Solution {
             rows.add(new StringBuilder());
         }
         int cursorRow = 0; //depth;
-        boolean movingDown = false; //!!!
+        boolean movingDown = false; // initialize as false, it would be updated in the first loop soon...
         for(int j = 0; j < s.length(); j++){
             char ch = s.charAt(j);
             rows.get(cursorRow).append(ch);
