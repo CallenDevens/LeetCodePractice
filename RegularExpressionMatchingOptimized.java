@@ -1,7 +1,9 @@
 class Solution {
+	//recursive solution
     public boolean isMatch(String s, String p) {
         if(p.isEmpty()) return s.isEmpty();
         
+		//first chracter cannot be *
         boolean isFirstCharMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.');
         
         if(p.length() >= 2 && p.charAt(1) == '*'){

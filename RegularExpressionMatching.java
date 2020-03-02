@@ -1,6 +1,7 @@
 class Solution {
     public boolean isMatch(String s, String p) {
         
+		//invalid patterns
         if(p.startsWith("*")) return false;
         
         int i = 0;
